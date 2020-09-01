@@ -1,6 +1,5 @@
 //feature 1.1
 import React from 'react';
-import data from "./data.json";
 import Products from './components/Products';
 import Filter from './components/Filter';
 import Cart from './components/Cart';
@@ -11,10 +10,7 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      products: data.products,
       cartItems: localStorage.getItem("cartItems")? JSON.parse(localStorage.getItem("cartItems")):[],
-      size:"",
-      sort: "",
     }
   }
 
@@ -57,6 +53,7 @@ addToCart =(product) => {
         <main>
           <div className="content">
             <div className="main">
+              <Filter></Filter>
               <Products addToCart={this.addToCart}></Products>
             </div>
             <div className="sidebar">
