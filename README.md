@@ -1,4 +1,5 @@
 # React Shopping Cart
 
-# Step 1 : React App
+Deployed this project on Heroku.
+Heroku Link: https://shopping-cart-ebbie.herokuapp.com/
 
